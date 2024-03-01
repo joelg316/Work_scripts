@@ -1,0 +1,920 @@
+{
+    "type": "bundle",
+    "id": "bundle--39d4ae21-d934-4924-9449-11b218804984",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8256c2fe-0d44-48be-b25c-6623bc012c1e",
+            "created": "2021-08-27T01:25:22.565822Z",
+            "modified": "2021-08-27T01:25:22.565822Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '13.32.215.19']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-08-27T01:25:22.565754Z",
+            "valid_until": "2021-09-10T01:25:22.56576Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"A Network Trojan was detected\", \"alert_message\": \"SHLAYER CnC\", \"shared_domains\": 2, \"ioc_type\": \"ip\", \"ioc_value\": \"13.32.215.19\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--a41a3fff-1c63-463b-ad9f-e7809db4cc31",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--28c38cc4-8e25-4b33-86e3-d5fdfdb47092",
+            "created": "2021-08-27T03:19:03.715474Z",
+            "modified": "2021-08-27T03:19:03.715474Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '34.123.225.97']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-08-27T03:19:03.715409Z",
+            "valid_until": "2021-09-10T03:19:03.715415Z",
+            "labels": [
+                "{\"bad_asn\": false, \"alert_class\": \"A Network Trojan was detected\", \"alert_message\": \"Netwire RAT Check-in\", \"shared_domains\": 1, \"ioc_type\": \"ip\", \"ioc_value\": \"34.123.225.97\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--3078b9de-8d15-41b8-bd96-845e6d752235",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4c6487fd-a8f2-45ae-bc3a-9ab95e508db9",
+            "created": "2021-08-27T05:03:10.100459Z",
+            "modified": "2021-08-27T05:03:10.100459Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '23.204.157.105']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-08-27T05:03:10.100399Z",
+            "valid_until": "2021-09-10T05:03:10.100405Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"Crypto Currency Mining Activity Detected\", \"alert_message\": \"Possible BitCoin Miner User-Agent (miner)\", \"shared_domains\": 1, \"ioc_type\": \"ip\", \"ioc_value\": \"23.204.157.105\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--767746fc-4b0f-4363-9d4f-d38321e514c3",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d90e25b0-f0cd-432f-b8ed-34c08b7e9258",
+            "created": "2021-08-27T05:35:36.213153Z",
+            "modified": "2021-08-27T05:35:36.213153Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '31.3.152.107']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-08-27T05:35:36.213066Z",
+            "valid_until": "2021-09-10T05:35:36.213076Z",
+            "labels": [
+                "{\"bad_asn\": false, \"alert_class\": \"Attempted Administrator Privilege Gain\", \"alert_message\": \"Possible MobileIron RCE Attempt Inbound (CVE-2020-15505)\", \"shared_domains\": 0, \"ioc_type\": \"ip\", \"ioc_value\": \"31.3.152.107\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--7e2b3821-c8d8-4519-8661-b444cc8ea0a0",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--59c3faca-1433-431d-aafd-fcaa9149c1dd",
+            "created": "2021-08-27T05:36:58.543374Z",
+            "modified": "2021-08-27T05:36:58.543374Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '31.3.152.107']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-08-27T05:36:58.543311Z",
+            "valid_until": "2021-09-10T05:36:58.543318Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"Attempted Administrator Privilege Gain\", \"alert_message\": \"Apache Struts Possible xwork Disable Method Execution\", \"shared_domains\": 0, \"ioc_type\": \"ip\", \"ioc_value\": \"31.3.152.107\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--0f6bbe4e-13e9-4edf-85a3-de618b1065a6",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5c88b5a5-6231-42af-ab50-1b59dd864236",
+            "created": "2021-08-27T05:36:58.692604Z",
+            "modified": "2021-08-27T05:36:58.692604Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '31.3.152.107']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-08-27T05:36:58.692543Z",
+            "valid_until": "2021-09-10T05:36:58.692549Z",
+            "labels": [
+                "{\"bad_asn\": false, \"alert_class\": \"Web Application Attack\", \"alert_message\": \"ElasticSearch Directory Traversal Attempt (CVE-2015-3337)\", \"shared_domains\": 0, \"ioc_type\": \"ip\", \"ioc_value\": \"31.3.152.107\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--7b9d18c2-b4a6-4cf4-82d5-ec0092da2c3e",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7f7089df-3ded-4fdb-8abb-a00c3ff97516",
+            "created": "2021-08-27T05:36:58.489398Z",
+            "modified": "2021-08-27T05:36:58.489398Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '31.3.152.107']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-08-27T05:36:58.489332Z",
+            "valid_until": "2021-09-10T05:36:58.489339Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"Attempted User Privilege Gain\", \"alert_message\": \"Apache Struts Dynamic Method Invocation Remote Code Execution (2016-3081)\", \"shared_domains\": 0, \"ioc_type\": \"ip\", \"ioc_value\": \"31.3.152.107\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--0d0d49d7-fb68-4e30-bc45-f9e3bcceaac8",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e7cd241d-50bd-4eb6-92be-2def6850f125",
+            "created": "2021-08-27T05:36:58.685331Z",
+            "modified": "2021-08-27T05:36:58.685331Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '31.3.152.107']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-08-27T05:36:58.685262Z",
+            "valid_until": "2021-09-10T05:36:58.685268Z",
+            "labels": [
+                "{\"bad_asn\": false, \"alert_class\": \"Attempted User Privilege Gain\", \"alert_message\": \"Possible Apache Struts OGNL Command Execution CVE-2013-2251 action\", \"shared_domains\": 0, \"ioc_type\": \"ip\", \"ioc_value\": \"31.3.152.107\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--83df8e1f-b70e-488c-a30c-1aad405c7327",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fc7d7e3d-d922-4a55-bd83-b8e82f98c0e9",
+            "created": "2021-08-27T05:36:58.624423Z",
+            "modified": "2021-08-27T05:36:58.624423Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '31.3.152.107']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-08-27T05:36:58.624358Z",
+            "valid_until": "2021-09-10T05:36:58.624365Z",
+            "labels": [
+                "{\"bad_asn\": false, \"alert_class\": \"Attempted User Privilege Gain\", \"alert_message\": \"Possible Apache Struts OGNL Command Execution CVE-2013-2251 redirectAction\", \"shared_domains\": 0, \"ioc_type\": \"ip\", \"ioc_value\": \"31.3.152.107\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--62df8be9-83d7-4345-bb5a-d95685cb4f0e",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7ec81b91-472d-4420-87f9-8105eba0a539",
+            "created": "2021-08-27T05:37:44.243208Z",
+            "modified": "2021-08-27T05:37:44.243208Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '31.3.152.107']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-08-27T05:37:44.243115Z",
+            "valid_until": "2021-09-10T05:37:44.243122Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"Attempted User Privilege Gain\", \"alert_message\": \"Possible Apache Struts OGNL in Dynamic Action\", \"shared_domains\": 0, \"ioc_type\": \"ip\", \"ioc_value\": \"31.3.152.107\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--28d2886b-9616-4c6c-9c23-c44e3fa462f4",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7f4eae6c-ac26-4a1c-950e-5bd998c2e04a",
+            "created": "2021-09-01T02:43:03.876192Z",
+            "modified": "2021-09-01T02:43:03.876192Z",
+            "name": "domain IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'qwerty12346.ru']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-01T02:43:03.876162Z",
+            "valid_until": "2021-09-15T02:43:03.876168Z",
+            "labels": [
+                "{\"domain_age\": 12, \"alert_class\": \"A Network Trojan was detected\", \"alert_message\": \"Godzilla Loader Retrieving Payload\", \"ioc_type\": \"domain\", \"ioc_value\": \"qwerty12346.ru\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--cc969e04-24c4-4257-8ccc-3263dca8581b",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b597bb21-bea2-48ac-a595-32596bdea1a4",
+            "created": "2021-09-01T06:45:50.178247Z",
+            "modified": "2021-09-01T06:45:50.178247Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '34.104.35.123']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-01T06:45:50.17818Z",
+            "valid_until": "2021-09-15T06:45:50.178186Z",
+            "labels": [
+                "{\"alert_class\": \"Attempted Denial of Service\", \"alert_message\": \"Rockwell RNA Message Large Header Length - 8Kb\", \"shared_domains\": 1, \"ioc_type\": \"ip\", \"ioc_value\": \"34.104.35.123\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--1da2a026-0758-4cfb-b4e9-5d8db168068a",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--de47e785-af3a-4cfa-9906-b80fdb9c1344",
+            "created": "2021-09-01T07:25:48.511278Z",
+            "modified": "2021-09-01T07:25:48.511278Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '20.110.6.21']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-01T07:25:48.511205Z",
+            "valid_until": "2021-09-15T07:25:48.511214Z",
+            "labels": [
+                "{\"alert_class\": \"Attempted User Privilege Gain\", \"alert_message\": \"WebShell - Generic - c99shell based POST structure w/multipart\", \"shared_domains\": 0, \"ioc_type\": \"ip\", \"ioc_value\": \"20.110.6.21\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--b28a875b-a3e0-4f72-8750-c0744b10faf0",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--921dcae5-8110-42f4-82f6-19658517c634",
+            "created": "2021-09-08T05:35:39.636596Z",
+            "modified": "2021-09-08T05:35:39.636596Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '188.126.89.92']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-08T05:35:39.636541Z",
+            "valid_until": "2021-09-22T05:35:39.636546Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"Web Application Attack\", \"alert_message\": \"ColdFusion adminapi access\", \"shared_domains\": 1, \"ioc_type\": \"ip\", \"ioc_value\": \"188.126.89.92\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--0154907c-f9f7-44bd-a087-75fb83aed724",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6f56b627-4f3a-48de-95f9-6e0f6f246208",
+            "created": "2021-09-08T12:47:54.630179Z",
+            "modified": "2021-09-08T12:47:54.630179Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '117.222.207.206']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-08T12:47:54.630109Z",
+            "valid_until": "2021-09-22T12:47:54.630115Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"Potential Corporate Privacy Violation\", \"alert_message\": \"BitTorrent DHT ping request\", \"shared_domains\": 0, \"ioc_type\": \"ip\", \"ioc_value\": \"117.222.207.206\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--e48152d4-7bce-4554-90a3-d26f81ef0b62",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8351a050-4281-411c-8b20-9e151db44cf6",
+            "created": "2021-09-08T13:12:25.7869Z",
+            "modified": "2021-09-08T13:12:25.7869Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '23.10.240.113']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-08T13:12:25.786842Z",
+            "valid_until": "2021-09-22T13:12:25.786847Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"A Network Trojan was detected\", \"alert_message\": \"SHLAYER CnC\", \"shared_domains\": 1, \"ioc_type\": \"ip\", \"ioc_value\": \"23.10.240.113\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--70327a16-a396-485d-8ee8-490a2271cac1",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--28b0cce6-2806-4243-9230-594e4f26f40b",
+            "created": "2021-09-08T13:19:46.233371Z",
+            "modified": "2021-09-08T13:19:46.233371Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '104.75.163.171']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-08T13:19:46.233233Z",
+            "valid_until": "2021-09-22T13:19:46.23324Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"A Network Trojan was detected\", \"alert_message\": \"SHLAYER CnC\", \"shared_domains\": 1, \"ioc_type\": \"ip\", \"ioc_value\": \"104.75.163.171\", \"score\": 3}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--e37538de-42bd-45bd-95c5-8dc27142f0f8",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--28b0cce6-2806-4243-9230-594e4f26f40b",
+            "created": "2021-09-08T13:19:46.233371Z",
+            "modified": "2021-09-08T13:19:46.233371Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '104.75.163.171']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-08T13:19:46.233233Z",
+            "valid_until": "2021-09-22T13:19:46.23324Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"A Network Trojan was detected\", \"alert_message\": \"SHLAYER CnC\", \"shared_domains\": 1, \"ioc_type\": \"ip\", \"ioc_value\": \"104.75.163.171\", \"score\": 3}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--42ec453e-b078-4ee8-8d37-7a11aa0f37f7",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0becf3ad-c9ae-491d-a87e-b09852bc4879",
+            "created": "2021-09-08T15:07:56.893669Z",
+            "modified": "2021-09-08T15:07:56.893669Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '23.48.9.107']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-08T15:07:56.893605Z",
+            "valid_until": "2021-09-22T15:07:56.893611Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"A Network Trojan was detected\", \"alert_message\": \"SHLAYER CnC\", \"shared_domains\": 1, \"ioc_type\": \"ip\", \"ioc_value\": \"23.48.9.107\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--698e2081-559f-44cf-a85a-cffaa5ad30c4",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b116b8e2-6cb3-4e0f-8327-1b91c5f3c357",
+            "created": "2021-09-08T15:25:47.948559Z",
+            "modified": "2021-09-08T15:25:47.948559Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '54.230.253.124']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-08T15:25:47.948499Z",
+            "valid_until": "2021-09-22T15:25:47.948505Z",
+            "labels": [
+                "{\"alert_class\": \"A Network Trojan was detected\", \"alert_message\": \"SHLAYER CnC\", \"shared_domains\": 1, \"ioc_type\": \"ip\", \"ioc_value\": \"54.230.253.124\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--386ff461-cc75-414d-99cc-aa8132c093fa",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2d258831-f93e-4e97-ac1f-cf29070321cc",
+            "created": "2021-09-08T15:50:11.473948Z",
+            "modified": "2021-09-08T15:50:11.473948Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '116.91.16.123']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-08T15:50:11.473882Z",
+            "valid_until": "2021-09-22T15:50:11.473888Z",
+            "labels": [
+                "{\"alert_class\": \"Web Application Attack\", \"alert_message\": \"JAWS Webserver Unauthenticated Shell Command Execution\", \"shared_domains\": 1, \"ioc_type\": \"ip\", \"ioc_value\": \"116.91.16.123\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--67c5703c-b7d8-4268-ba25-5caa6354cd45",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0de6c0c1-e9b4-42d8-9043-51031bad6047",
+            "created": "2021-09-08T16:01:32.187103Z",
+            "modified": "2021-09-08T16:01:32.187103Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '23.59.97.41']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-08T16:01:32.187036Z",
+            "valid_until": "2021-09-22T16:01:32.187044Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"Potential Corporate Privacy Violation\", \"alert_message\": \"Empty User-Agent Header\", \"shared_domains\": 1, \"ioc_type\": \"ip\", \"ioc_value\": \"23.59.97.41\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}
+{
+    "type": "bundle",
+    "id": "bundle--8d427c21-7cb3-4099-be2a-45afdd8d4b2b",
+    "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--97065655-4e1b-4b95-a937-7271b88e6bee",
+            "created": "2021-09-08T16:16:41.197158Z",
+            "modified": "2021-09-08T16:16:41.197158Z",
+            "name": "ip IOC",
+            "description": "Possible Malicious IOC",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '37.120.158.3']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2021-09-08T16:16:41.197092Z",
+            "valid_until": "2021-09-22T16:16:41.197099Z",
+            "labels": [
+                "{\"attribute\": \"Signature check criteria not met\", \"alert_class\": \"A Network Trojan was detected\", \"alert_message\": \"Trojan/Win32.Zbot Covert Channel port 53\", \"shared_domains\": 0, \"ioc_type\": \"ip\", \"ioc_value\": \"37.120.158.3\", \"score\": 3, \"analyst_vetted\": true}"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        }
+    ]
+}

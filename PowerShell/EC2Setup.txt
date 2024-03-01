@@ -1,0 +1,83 @@
+<powershell>
+
+# Note: If the script throws this error "The request was aborted: The connection was closed unexpectedly." The most likely cause is that the Notepad++ version was updated and the existing URL is returning a 404 error. Test accessing the Notepad++ download link and update if needed.
+
+# Log stdout to a file
+Start-Transcript -path Desktop\EC2SetupOutput.txt
+
+#Set Central time zone
+Write-Host "$(Get-Date -format T) - Setting time zone"
+Set-TimeZone -Id "Central Standard Time"
+
+# Get default network interface index (interface assigned to default route 0.0.0.0)
+$netindex = (Get-NetRoute -DestinationPrefix '0.0.0.0/0' |
+    Sort-Object -Property { $_.InterfaceMetric + $_.RouteMetric } |
+    Select-Object -First 1 | % {Process { $_.ifIndex }})
+echo "Default interface index: $netindex"
+
+# Set DNS servers to domain controller and google on primary NIC
+try { 
+	Set-DNSClientServerAddress –interfaceIndex $netindex –ServerAddresses ("10.0.0.132","8.8.8.8")
+	Write-Host "$(Get-Date -format T) - DNS servers updated on default NIC"
+}
+catch {
+	Write-Host "$(Get-Date -format T) - Could not update DNS settings"
+    throw $_.Exception.Message
+}
+
+# Install telnet client
+Write-Host "$(Get-Date -format T) - Installing telnet client"
+dism /online /Enable-Feature /FeatureName:TelnetClient
+
+# Set Chrome as default browser
+# This function doesn't always work and there is no easy way to set the default programs in the registry: https://superuser.com/questions/1748620/on-windows-10-is-there-a-file-i-can-modify-to-configure-the-default-apps
+# It's more of a convenience anyway, if this part fails you can try adjusting the keypresses or just set the default web browser manually
+# The series of key presses in this function only works if it's the first time switching to Chrome because Windows prompts "Are you sure?" but only the first time.
+# And if that "are you sure" prompt does not appear the last "{TAB} " will select the option to reset to Windows defaults >:(
+# That is why the line to call this function must be located within the install Chrome try statement which only runs if Chrome is not already installed, otherwise it will be called every time the instance starts and will reset default programs to Microsoft defaults
+    
+function Set-ChromeAsDefaultBrowser {
+    Add-Type -AssemblyName 'System.Windows.Forms'
+    Start-Process $env:windir\system32\control.exe -ArgumentList '/name Microsoft.DefaultPrograms /page pageDefaultProgram\pageAdvancedSettings?pszAppName=google%20chrome'
+    Sleep 2
+	[System.Windows.Forms.SendKeys]::SendWait("{TAB}{TAB}{TAB}{TAB}{TAB} {TAB} {TAB} %{F4}")
+}
+
+# Install Chrome unless it's already installed
+# https://adamtheautomator.com/powershell-check-if-file-exists/
+
+if (-not(Test-Path -Path "C:\Program Files\Google\Chrome\Application\chrome.exe" -PathType Leaf)) {
+     try {
+		Write-Host "$(Get-Date -format T) - Chrome not found, installing now"
+         $Path = $env:TEMP; $Installer = "chrome_installer.exe"; Invoke-WebRequest "http://dl.google.com/chrome/install/375.126/chrome_installer.exe" -OutFile $Path\$Installer; Start-Process -FilePath $Path\$Installer -Args "/silent /install" -Verb RunAs -Wait; Remove-Item $Path\$Installer
+		# Call function to set Chrome as default browser
+		Write-Host "$(Get-Date -format T) - Setting Chrome as default browser"
+		Set-ChromeAsDefaultBrowser
+	 }
+     catch {
+         throw $_.Exception.Message
+     }
+} else {
+ # If the file already exists, show the message and do nothing.
+     Write-Host "$(Get-Date -format T) - Chrome already installed, skipping new install"
+}
+
+# Install Notepad++ unless already installed
+# The Notepad++ version will update periodically causing the old URL to return a 404 error. If that happens the script will throw an error "The request was aborted: The connection was closed unexpectedly." You just need to update the github link to the latest Notepad version exe.
+if (-not(Test-Path -Path "C:\Program Files (x86)\Notepad++\notepad++.exe" -PathType Leaf)) {
+     try {
+		 Write-Host "$(Get-Date -format T) - Notepad++ not found, installing now"
+		 $Path = $env:TEMP; $Installer = "npp.8.6.0.Installer.exe"; Invoke-WebRequest "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.6.2/npp.8.6.2.Installer.exe" -OutFile $Path\$Installer; Start-Process -FilePath $Path\$Installer /S -NoNewWindow -Wait -PassThru; Remove-Item $Path\$Installer
+     }
+     catch {
+         throw $_.Exception.Message
+     }
+} else {
+ # If the file already exists, show the message and do nothing.
+     Write-Host "$(Get-Date -format T) - Notepad++ already installed, skipping new install"
+}
+
+# Stop logging
+Stop-Transcript
+
+</powershell>

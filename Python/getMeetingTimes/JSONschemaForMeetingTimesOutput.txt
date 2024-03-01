@@ -1,0 +1,54 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "confidence": {
+                "type": "integer"
+            },
+            "organizerAvailability": {
+                "type": "string"
+            },
+            "attendeeAvailability": {
+                "type": "array"
+            },
+            "locations": {
+                "type": "array"
+            },
+            "meetingTimeSlot": {
+                "type": "object",
+                "properties": {
+                    "start": {
+                        "type": "object",
+                        "properties": {
+                            "dateTime": {
+                                "type": "string"
+                            },
+                            "timeZone": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "end": {
+                        "type": "object",
+                        "properties": {
+                            "dateTime": {
+                                "type": "string"
+                            },
+                            "timeZone": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "required": [
+            "confidence",
+            "organizerAvailability",
+            "attendeeAvailability",
+            "locations",
+            "meetingTimeSlot"
+        ]
+    }
+}

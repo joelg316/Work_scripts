@@ -1,0 +1,116 @@
+C:\Users\joelg\PycharmProjects\searchDetections\venv\Scripts\python.exe C:/Users/joelg/PycharmProjects/searchDetections/venv/main.py
+200
+{
+    "data": {
+        "logs": [
+            {
+                "eventTimeDT": "2021-10-26T18:42:50+00:00",
+                "tags": [
+                    "XSAE.F2140",
+                    "XSAE.F3066"
+                ],
+                "uuid": "db351418-ebdb-4a9d-a3ed-d7cd2276e74b",
+                "searchDL": "DDL",
+                "productCode": "sds",
+                "filterRiskLevel": "medium",
+                "actResult": [
+                    "Quarantined"
+                ],
+                "endpointGUID": "275691d5-d696-8a19-001d-663dc6eb98e7",
+                "endpointHostName": "ip-192-168-29-128.ec2.internal",
+                "endpointIp": [
+                    "18.237.246.133"
+                ],
+                "eventId": "100100",
+                "eventName": "MALWARE_DETECTION",
+                "fileHash": "3395856CE81F2B7382DEE72602F798B642F14140",
+                "fileName": [
+                    "eicar.com"
+                ],
+                "filePath": "/",
+                "filePathName": "/eicar.com",
+                "firstAct": "Clean",
+                "firstActResult": "Unable to clean file",
+                "interestedHost": "ip-192-168-29-128.ec2.internal",
+                "interestedIp": [
+                    "18.237.246.133"
+                ],
+                "mDeviceGUID": "C5B09EDD-C725-907F-29D9-B8C30D18C48F",
+                "malName": "Eicar_test_file",
+                "malType": "Unknown",
+                "mpname": "Cloud One - Workload Security",
+                "mpver": "Deep Security/50.0.667",
+                "pname": "Trend Micro Deep Security",
+                "pver": "20.0.0.3165",
+                "rt": "2021-10-26T18:42:50Z",
+                "rt_utc": "2021-10-26T18:42:50Z",
+                "rtDate": "2021-10-26",
+                "rtHour": 18,
+                "rtWeekDay": "Tuesday",
+                "scanType": "SCHEDULED",
+                "secondAct": "Quarantine",
+                "secondActResult": "File quarantined",
+                "senderGUID": "E00DBD49-2BAE-D058-5A7C-B416AE315385",
+                "severity": 4,
+                "logKey": "C5B09EDD-C725-907F-29D9-B8C30D18C48F_AM_abbd143000e4e928228baa710863036b27ce4cc89bb672f7fcb8bcf2f736ac67",
+                "eventTime": 1635273770000
+            },
+            {
+                "eventTimeDT": "2021-10-26T18:38:38+00:00",
+                "tags": [
+                    "XSAE.F2140",
+                    "XSAE.F3066"
+                ],
+                "uuid": "01b5f04d-b0c0-4b95-89fc-d0d319282cf0",
+                "searchDL": "DDL",
+                "productCode": "sds",
+                "filterRiskLevel": "medium",
+                "actResult": [
+                    "Quarantined"
+                ],
+                "endpointGUID": "275691d5-d696-8a19-001d-663dc6eb98e7",
+                "endpointHostName": "ip-192-168-29-128.ec2.internal",
+                "endpointIp": [
+                    "18.237.246.133"
+                ],
+                "eventId": "100100",
+                "eventName": "MALWARE_DETECTION",
+                "fileHash": "3395856CE81F2B7382DEE72602F798B642F14140",
+                "fileName": [
+                    "eicar.com"
+                ],
+                "filePath": "/var/log",
+                "filePathName": "/var/log/eicar.com",
+                "firstAct": "Clean",
+                "firstActResult": "Unable to clean file",
+                "interestedHost": "ip-192-168-29-128.ec2.internal",
+                "interestedIp": [
+                    "18.237.246.133"
+                ],
+                "mDeviceGUID": "C5B09EDD-C725-907F-29D9-B8C30D18C48F",
+                "malName": "Eicar_test_file",
+                "malType": "Unknown",
+                "mpname": "Cloud One - Workload Security",
+                "mpver": "Deep Security/50.0.667",
+                "pname": "Trend Micro Deep Security",
+                "pver": "20.0.0.3165",
+                "rt": "2021-10-26T18:38:38Z",
+                "rt_utc": "2021-10-26T18:38:38Z",
+                "rtDate": "2021-10-26",
+                "rtHour": 18,
+                "rtWeekDay": "Tuesday",
+                "scanType": "SCHEDULED",
+                "secondAct": "Quarantine",
+                "secondActResult": "File quarantined",
+                "senderGUID": "E00DBD49-2BAE-D058-5A7C-B416AE315385",
+                "severity": 4,
+                "logKey": "C5B09EDD-C725-907F-29D9-B8C30D18C48F_AM_3ed7fd535b402b4ad5a1e83aff2199f1858de34555beb9facf924048da683c26",
+                "eventTime": 1635273518000
+            }
+        ],
+        "total_count": 2,
+        "offset": 0
+    }
+}
+
+Process finished with exit code 0

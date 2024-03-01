@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ulimit -S -c unlimited
+echo -e "fs.suid_dumpable = 2\nkernel.core_pattern = /tmp/core" >> /etc/sysctl.conf
+source /etc/profile
+sysctl -p

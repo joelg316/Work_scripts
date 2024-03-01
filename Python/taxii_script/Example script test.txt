@@ -1,0 +1,41 @@
+"C:\Users\joelg\PycharmProjects\TAXII script\venv\Scripts\python.exe" "C:/Users/joelg/PycharmProjects/TAXII script/venv/script"
+Extracted the following values from stix data and wrote results to file: C:\Users\joelg\Documents\Scripts\Python\taxii\output.json
+[["ip IOC", "13.32.215.19"], ["ip IOC", "34.123.225.97"], ["ip IOC", "23.204.157.105"], ["ip IOC", "31.3.152.107"], ["domain IOC", "qwerty12346.ru"], ["ip IOC", "34.104.35.123"], ["ip IOC", "20.110.6.21"]]
+Uploading data to Vision One suspicious objects
+Uploading: ip IOC 13.32.215.19, scan action: log
+Status code: 200
+{
+    "data": {}
+}
+Uploading: ip IOC 34.123.225.97, scan action: log
+Status code: 200
+{
+    "data": {}
+}
+Uploading: ip IOC 23.204.157.105, scan action: log
+Status code: 200
+{
+    "data": {}
+}
+Uploading: ip IOC 31.3.152.107, scan action: log
+Status code: 200
+{
+    "data": {}
+}
+Uploading: domain IOC qwerty12346.ru, scan action: log
+Status code: 200
+{
+    "data": {}
+}
+Uploading: ip IOC 34.104.35.123, scan action: log
+Status code: 200
+{
+    "data": {}
+}
+Uploading: ip IOC 20.110.6.21, scan action: log
+Status code: 200
+{
+    "data": {}
+}
+
+Process finished with exit code 0
